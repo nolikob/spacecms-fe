@@ -1,0 +1,14 @@
+.Layout {
+    margin: 0 -15px;
+
+    &-contentWrapper {
+        overflow-y: auto;
+        height: 100vh;
+    }
+
+    &-sidePanel {
+        margin: 0 -15px;
+        background-color: gray;
+        height: 100vh;
+    }
+}

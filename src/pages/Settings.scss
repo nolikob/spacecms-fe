@@ -1,0 +1,13 @@
+.SettingCard {
+    &-title {
+        display: block;
+        width: 100%;
+        text-transform: uppercase;
+    }
+
+    &-content {
+        form {
+            width: 100%;
+        }
+    }
+}

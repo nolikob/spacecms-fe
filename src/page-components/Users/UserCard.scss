@@ -1,0 +1,50 @@
+.UserCard {
+  min-width: 10rem;
+  min-height: 10rem;
+  position: relative;
+
+  &-removeUser {
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    color: red;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+}
+
+.Permission {
+  text-transform: capitalize;
+  width: 100%;
+  margin-bottom: 1rem;
+
+  &-switch {
+    display: block;
+    width: 38px;
+    height: 20px;
+    position: relative;
+    border-radius: 12px;
+    background-color: #cdcdcd;
+    transition: all .2s ease-in;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      top: 2px;
+      left: 2px;
+      border-radius: 50%;
+      background-color: #ffffff;
+      transform: translateX(0);
+    }
+  }
+
+  &-switch--selected {
+    background-color: green;
+
+    &::after {
+      transform: translateX(18px);
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.Navigation {
+    padding: 3rem 0;
+    width: 100%;
+    overflow-y: auto;
+
+    a {
+        width: 100%;
+    }
+
+    &-menuItem {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        padding: 1rem;
+        margin: 1rem 0;
+        position: relative;
+
+        &:hover {
+            background-color: white;
+            color: darkgray;
+        }
+
+        &--selected {
+            background-color: white;
+            color: darkgray;
+
+            &::before, &::after {
+                content: "";
+                position: absolute;
+                right: 0;
+                z-index: 2;
+                width: 4rem;
+                height: 4rem;
+                background-color: transparent;
+            }
+
+            &::before {
+                top: -4rem;
+                border-bottom-right-radius: 50%;
+                box-shadow: 10px 10px 0 white;
+            }
+
+            &::after {
+                bottom: -4rem;
+                border-top-right-radius: 50%;
+                box-shadow: 10px -10px 0 white;
+            }
+        }
+    }
+
+    &-itemIcon {
+        font-size: 1.5rem;
+        margin-right: 1rem;
+    }
+}
