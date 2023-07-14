@@ -17,11 +17,11 @@
     "@types/react-dom": "^16.9.5",
     "bootstrap": "^4.4.1",
     "formik": "^2.1.4",
-    "node-sass": "^4.13.1",
+    "node-sass": "^9.0.0",
     "react": "^16.13.1",
     "react-bootstrap": "^1.0.0",
     "react-dom": "^16.13.1",
-    "react-scripts": "3.4.1",
+    "react-scripts": "5.0.1",
     "typescript": "^3.8.3",
     "yup": "^0.28.3"
   },
